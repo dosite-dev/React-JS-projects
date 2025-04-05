@@ -6,6 +6,7 @@ function App()
     <>
     <Students name="Spongebob" age={30} isStudents ={true}/>
     <Students name="Patrick" age={47} isStudents ={false}/>
+    <Students name="larry"/>
 
     </>
    
