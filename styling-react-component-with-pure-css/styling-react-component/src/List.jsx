@@ -1,7 +1,7 @@
 function List(){
     const fruits =['orange','pineApple','mango']
     const listItems = fruits.map(fruit => <li>{fruit}</li>)
-    return( <ul>{listItems}</ul>)
+    return( <ol>{listItems}</ol>)
 
 }
 export default List
