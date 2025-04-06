@@ -8,9 +8,12 @@ function List(){
     fruits.sort((a,b)=>a.calories-b.calories)//numbers
 
 
-    const listItems = fruits.map(fruit => <li key={fruit.name}>
-                                            {fruit.name}:&nbsp;
-                                            <b>{fruit.calories}</b>
+    const lowCalFruits = fruits.filter(fruit => fruit.calories > 50)
+
+
+    const listItems =lowCalFruits.map(lowCalFruit => <li key={lowCalFruit.name}>
+                                            {lowCalFruit.name}:&nbsp;
+                                            <b>{lowCalFruit.calories}</b>
                                         </li>)
 
 
